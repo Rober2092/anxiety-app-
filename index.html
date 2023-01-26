@@ -1,82 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Anxiety Support</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-  </head>
-  <body>
-    <header>
-      <h1>Anxiety Support</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#symptoms">Symptoms</a></li>
-        <li><a href="#causes">Causes</a></li>
-        <li><a href="#treatments">Treatments</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#quiz">Anxiety Quiz</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="about">
-        <h2>About Anxiety</h2>
-        <p>Anxiety is a normal and often healthy emotion...</p>
-      </section>
-      <section id="symptoms">
-        <h2>Symptoms of Anxiety</h2>
-        <ul>
-          <li>Feeling restless or on edge</li>
-          <li>Easily fatigued</li>
-          <li>Difficulty concentrating</li>
-          <li>Irritability</li>
-          <li>Muscle tension</li>
-        </ul>
-      </section>
-      <section id="causes">
-        <h2>Causes of Anxiety</h2>
-        <p>Anxiety can be caused by a variety of factors, including genetics, brain chemistry, and life events...</p>
-      </section>
-      <section id="treatments">
-        <h2>Treatments for Anxiety</h2>
-        <p>Effective treatments for anxiety include therapy, medication, and lifestyle changes...</p>
-      </section>
-      <section id="resources">
-        <h2>Helpful Resources</h2>
-        <ul>
-          <li><a href="https://www.anxiety.org">Anxiety and Depression Association of America</a></li>
-          <li><a href="https://www.adaa.org">National Alliance on Mental Illness</a></li>
-          <li><a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders">National Institute of Mental Health</a></li>
-        </ul>
-      </section>
-      <section id="quiz">
-        <h2>Take our Anxiety Quiz</h2>
-        <p>Answer a few questions to assess your anxiety levels and get personalized recommendations for treatment...</p>
-        <form>
-          <label>Question 1: How often do you feel anxious?</label>
-            <input type="radio" name="question1" value="rarely"> Rarely
-            <input type="radio" name="question1" value="sometimes"> Sometimes
-            <input type="radio" name="question1" value="frequently"> Frequently
-          <label>Question 2: How does your anxiety affect your daily life?</label>
-            <input type="radio" name="question2" value="not at all"> Not at all
-            <input type="radio" name="question2" value="slightly"> Slightly
-            <input type="radio" name="question2" value="significantly"> Significantly
-          <label>Question 3: How often do you feel nervous?</label>
-            <input type="radio" name="question3" value="rarely"> Rarely
-            <input type="radio" name="question3" value="sometimes"> Sometimes
-            <input type="radio" name="question3" value="frequently"> Frequently
-          <label>Question 4: How often do you feel restless or on edge?</label>
-            <input type="radio" name="question4" value="rarely"> Rarely
-            <input type="radio" name="question4" value="sometimes"> Sometimes
-            <input type="radio" name="question4" value="frequently"> Frequently
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright ©2022 Anxiety Support</p>
-    </footer>
-  </body>
-  <script src="app.js"></script>
+<head>
+  <title>Anxiety Quiz</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<h1>Anxiety Quiz</h1>
+
+<form id="quiz-form">
+  <p>1. Do you often feel nervous or on edge?</p>
+  <input type="radio" name="question1" value="yes"> Yes
+  <input type="radio" name="question1" value="no"> No
+
+  <p>2. Do you have difficulty sleeping?</p>
+  <input type="radio" name="question2" value="yes"> Yes
+  <input type="radio" name="question2" value="no"> No
+
+  <p>3. Do you feel tired or have low energy?</p>
+  <input type="radio" name="question3" value="yes"> Yes
+  <input type="radio" name="question3" value="no"> No
+  <form id="quiz-form">
+    <p>1. Do you often feel nervous or on edge?</p>
+    <input type="radio" name="question1" value="yes"> Yes
+    <input type="radio" name="question1" value="no"> No
+  
+    <p>2. Do you have difficulty sleeping?</p>
+    <input type="radio" name="question2" value="yes"> Yes
+    <input type="radio" name="question2" value="no"> No
+  
+    <p>3. Do you feel tired or have low energy?</p>
+    <input type="radio" name="question3" value="yes"> Yes
+    <input type="radio" name="question3" value="no"> No
+  
+    <p>4. Do you have trouble concentrating?</p>
+    <input type="radio" name="question4" value="yes"> Yes
+    <input type="radio" name="question4" value="no"> No
+  
+    <p>5. Do you experience muscle tension or headaches?</p>
+    <input type="radio" name="question5" value="yes"> Yes
+    <input type="radio" name="question5" value="no"> No
+  
+    <p>6. Do you have feelings of hopelessness or helplessness
+  <input type="radio" name="question6" value="yes"> Yes
+  <input type="radio" name="question6" value="no"> No
+  <p>7. Do you often feel overwhelmed or stressed?</p>
+  <input type="radio" name="question7" value="yes"> Yes
+  <input type="radio" name="question7" value="no"> No
+
+  <p>8. Do you have a fear of losing control or going crazy?</p>
+  <input type="radio" name="question8" value="yes"> Yes
+  <input type="radio" name="question8" value="no"> No
+
+  <p>9. Do you have a fear of public places or social situations?</p>
+  <input type="radio" name="question9" value="yes"> Yes
+  <input type="radio" name="question9" value="no"> No
+
+  <p>10. Do you experience panic attacks or sudden feelings of fear?</p>
+  <input type="radio" name="question10" value="yes"> Yes
+  <input type="radio" name="question10" value="no"> No
+
+  <p>11. Do you have a fear of specific objects or situations?</p>
+  <input type="radio" name="question11" value="yes"> Yes
+  <input type="radio" name="question11" value="no"> No
+
+  <p>12. Do you avoid certain situations or activities due to anxiety?</p>
+  <input type="radio" name="question12" value="yes"> Yes
+  <input type="radio" name="question12" value="no"> No
+  
+  <button type="submit">Submit</button>
+</form>
+
+<p id="results"></p>
+<div id="progress-bar"></div>
+
+
+</body>
+<script src="app.js"></script>
 </html>

@@ -1,227 +1,86 @@
-/* Add a background gradient to the body */
+/* General Styles */
 body {
-  background: linear-gradient(to bottom, #87CEFA, #87CEEB);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
 }
 
-/* Style the header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-}
-header h1 {
-  font-size: 3rem;
-  font-weight: bold;
+/* Heading Styles */
+h1 {
   text-align: center;
-  color: #333;
-  text-shadow: 2px 2px 4px #fff;
-}
-
-/* Style the navigation */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-}
-nav a {
-  flex: 1;
-  padding: 15px;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  color: #555;
-  transition: background-color 0.2s ease-in;
-}
-nav a:hover {
-  background-color: rgba(240, 240, 240, 0.8);
-  color: #333;
-}
-
-/* Style the sections */
-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  margin-bottom: 50px;
-}
-section h2 {
-  width: 100%;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin-bottom: 30px;
-}
-section p {
-  width: 100%;
-  line-height: 1.5;
-  font-size: 1.3rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 30px;
-}
-section img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 20px;
-}
-/* Style the sections */
-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  margin-bottom: 50px;
-}
-section h2 {
-  width: 100%;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin-bottom: 30px;
-}
-section p {
-  width: 100%;
-  line-height: 1.5;
-  font-size: 1.3rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 30px;
-}
-section img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 30px;
-}
-section ul {
-  width: 100%;
-  margin-top: 20px;
-}
-section li {
-  width: 100%;
-  list-style-type: square;
-  margin-left: 20px;
-  font-size: 1.3rem;
-  color: #555;
-  text-align: center;
-}
-
-/* Style the resources section */
-section#resources a {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #555;
-  text-decoration: none;
-  transition: color 0.2s ease-in;
-}
-
-/* Add a hover effect to the resources links */
-section#resources a:hover {
-  color: #333;
-  text-decoration: underline;
-}
-
-/* Style the quiz section */
-section#quiz form {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-section#quiz label {
-  width: 100%;
-  font-size: 1.3rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 10px;
-}
-section#quiz input[type="radio"] {
-  margin-right: 10px;
-}
-section#quiz input[type="submit"] {
-  padding: 10px 20px;
-  background-color: #87CEFA;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in;
-}
-section#quiz input[type="submit"]:hover {
-  background-color: #87CEEB;
-}
-
-/* Style the footer */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   margin-top: 50px;
-}
-footer p {
-  font-size: 1.3rem;
-  color: #555;
-  text-align: center;
-}
-
-/* Style the forms */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
+  font-size: 36px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-input[type="submit"],
-input[type="reset"] {
-  width: 100%;
-  background-color: #87CEFA;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+/* Form Styles */
+form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Styles */
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+  margin-right: 10px;
   cursor: pointer;
-  font-size: 16px;
 }
 
-input[type="submit"]:hover {
-  background-color: #87CEEB;
+/* Submit Button Styles */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 600px) {
-  section {
-    flex-direction: column;
+/*Submit button hover effect*/
+button:hover {
+  background-color: #3E8E41;
+}
+
+/* Results Styles */
+#results {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+#progress-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease-in-out;
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    margin: 0 auto;
   }
-  nav a {
-    font-size: 1.2rem;
+  h1 {
+    font-size: 24px;
   }
 }
+
