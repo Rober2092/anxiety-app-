@@ -53,3 +53,39 @@ quizForm.addEventListener("submit", function (event) {
     // ...
   }
 });
+const resources = [
+  {
+      name: "Anxiety and Depression Association of America",
+      url: "https://adaa.org/",
+  },
+  {
+      name: "National Institute of Mental Health",
+      url: "https://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml",
+  },
+  {
+      name: "Anxiety UK",
+      url: "https://www.anxietyuk.org.uk/",
+  },
+  {
+      name: "Anxiety and Depression Society of America",
+      url: "https://www.adaa.org/",
+  },
+  {
+      name: "National Alliance on Mental Illness",
+      url: "https://www.nami.org/Home/Mental-Health-Conditions/Anxiety-Disorders",
+  }
+];
+
+// Get the resources list element
+const resourcesList = document.getElementById("resources-list");
+
+// Loop through the resources array and create list items for each resource
+for (let i = 0; i < resources.length; i++) {
+  const resource = resources[i];
+  const item = document.createElement("li");
+  const link = document.createElement("a");
+  link.href = resource.url;
+  link.innerHTML = resource.name;
+  item.appendChild(link);
+  resourcesList.appendChild(item);
+}
